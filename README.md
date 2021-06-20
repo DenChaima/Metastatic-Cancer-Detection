@@ -12,7 +12,7 @@ Breast cancer metastases detection using CNN.
 4. Combine prediction results on tiles of a WSI to create a heatmap 
 
 # Data
-The datasets used in this project:CAMELYON16 and CAMELYON17 are available in the [CAMELYON challenge website](https://camelyon17.grand-challenge.org/Data/) 
+The datasets used in this project: CAMELYON16 and CAMELYON17 are available in the [CAMELYON challenge website](https://camelyon17.grand-challenge.org/Data/) 
 
 # Execution order
 1. run generate_tiles.py in preprocess: divide WSI into fixed-size 256 x 256 tiles, and separate them into positive tiles (using the annotations provided) and negative tiles (using Otsu thresholding). 
