@@ -6,10 +6,10 @@ Histopathological-based Metastatic Cancer Detection using Deep learning - Group 
 Breast cancer metastases detection using CNN.
 
 ## How it works 
-Divide the WSI into fixed-size tiles and label each tile as positive or negative 
-Train a Convolutional Neural Network (CNN) to classify the WSI as tumor or normal
-Predict a score (from 0 to 1) for each tile in the WSI in the test set
-Combine prediction results on tiles of a WSI to create a heatmap 
+1. Divide the WSI into fixed-size tiles and label each tile as positive or negative 
+2. Train a Convolutional Neural Network (CNN) to classify the WSI as tumor or normal
+3. Predict a score (from 0 to 1) for each tile in the WSI in the test set
+4. Combine prediction results on tiles of a WSI to create a heatmap 
 
 # Data
 The datasets used in this project:CAMELYON16 and CAMELYON17 are available in the [CAMELYON challenge website](https://camelyon17.grand-challenge.org/Data/) 
