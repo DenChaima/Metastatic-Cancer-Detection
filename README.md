@@ -1,6 +1,6 @@
-# Group 5: Metastatic Cancer Detection
+# MLP Group 5: Metastatic Cancer Detection
 
-Build a breast cancer metastases detection and classification model using CNN.
+Build a breast cancer metastases detection and classification model using deep learning.
 
 ## How it works 
 1. Divide the WSI into fixed-size tiles and label each tile as positive or negative 
@@ -11,11 +11,11 @@ Build a breast cancer metastases detection and classification model using CNN.
 ## Data
 The datasets used in this project: **CAMELYON16** and **CAMELYON17** are available in the [CAMELYON challenge website](https://camelyon17.grand-challenge.org/Data/) 
 
-The datasets consist of Whole-Slide Images (WSI) of lymph nodes sections.
+The datasets consist of **Whole-Slide Images (WSI)** of lymph nodes sections.
 
 **CAMELYON16** 
 - Contains a total of 400 whole-slide images.
-- Training set contains 170 WSI. The ground truth data for the slides containing metastases is provided in two formats: .xml files containing metastasis annotations and WSI binary Masks.
+- Training set contains 270 WSI. The ground truth data for the slides containing metastases is provided in two formats: .xml files containing metastasis annotations and WSI binary Masks.
 - Test set contains 130 WSI.
 
 **CAMELYON17**
@@ -48,13 +48,13 @@ Divide WSI into fixed-size 256 x 256 tiles, and separate them into positive tile
 
 3. Run **generate_hdf5.py** located in **preprocess**
 
-Create a single HDF5 file containing all tiles obtained with **generate_tiles.py** (this is useful to reduce reading time). 
+Create a single HDF5 file containing all tiles obtained with **generate_tiles.py** (this is useful in reducing reading time). 
 
-4. Run **model.py** in **cnn_model**
+4. Run **model.py** located in **cnn_model**
 
 Train a CNN to predict if a tile is tumorous or normal 
 
-5. Run **heatmap.py** in **heatmap_creation**
+5. Run **heatmap.py** located in **heatmap_creation**
 
 Use the score predicted by the model on individual tiles to construct a heatmap of the metastases in the WSI. 
 
